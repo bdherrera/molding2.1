@@ -1,0 +1,48 @@
+.contenedor{
+    width: 500px;
+    margin: auto;
+    background-color: #e8e4e4;
+    padding: 50px;
+    border-radius: 20px;
+}
+.titulo{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+}
+.both{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.botones{
+    margin: auto;
+}
+footer{
+
+    bottom: 0;
+}
+.landing{
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.son-landing{
+    padding: 10px;
+}
+
+label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input,
+label {
+    margin: .4rem 0;
+}
+body {
+  height: 300;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnRYCVX4KB0C9dHW_DE2PX3B2ttLFoXh7vxx2iGc9kCzKj7yhxL1FvDQrx0hmZbT_EWSg&usqp=CAU");
+background-size: cover;
+  background-repeat:no-repeat;
+  background-position: center center;
+}

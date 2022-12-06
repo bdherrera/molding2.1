@@ -1,0 +1,5 @@
+com\mycompany\molding3\model\Contratistas.class
+com\mycompany\molding3\controller\controllerContratistas.class
+com\mycompany\molding3\model\Contratistas_.class
+com\mycompany\molding3\service\ContratistasFacade.class
+com\mycompany\molding3\service\AbstractFacade.class

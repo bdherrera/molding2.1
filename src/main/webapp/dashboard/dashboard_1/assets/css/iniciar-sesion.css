@@ -1,0 +1,49 @@
+body{
+    background:URL("../imagenes/LOGOPS.jpg");
+    background-size:1000px;
+    background-repeat:no-repeat;
+    background-position:center 350px ;
+}
+.contenedor{
+    width: 500px;
+    margin: auto;
+    background-color: #e8e4e4;
+    padding: 50px;
+    border-radius: 20px;
+    margin-bottom: 30px;;
+}
+.titulo{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+}
+.both{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.botones{
+    margin: auto;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+*:focus {
+  outline: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #11998e;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */     
+  font-size: 16px;
+  color: #222;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
