@@ -32,9 +32,9 @@ public class controllerContratistas implements Serializable {
     }
 
     public void eliminar(int id) {
-        Contratistas contra = new Contratistas();
-        contra.setIdproducto(id);
-        contratistafacade.remove(contra);
+        Contratistas contratistas = new Contratistas();
+        contratistas.setIdcontratistas(id);
+        contratistafacade.remove(contratistas);
 
     }
 
@@ -46,7 +46,7 @@ public class controllerContratistas implements Serializable {
     }
 
     public void update(int id) {
-        contratista.setIdproducto(id);
+        contratista.setIdcontratistas(id);
         contratistafacade.edit(contratista);
         mensaje = " se acatualizo correctamente";
     }
