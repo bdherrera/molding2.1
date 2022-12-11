@@ -242,7 +242,7 @@
 
                                                         <div class="d-grid gap-2" style="padding-top: 15px">
                                                             <h:form>
-                                                                <h:commandButton action="#{controllerContratistas.update(id)}" class="btn btn-warning" value="Guardar"></h:commandButton>
+                                                                <h:commandButton action="#{controllerContratistas.update(contratista.idcontratistas)}" class="btn btn-warning" value="Guardar"></h:commandButton>
                                                             </h:form>
 
                                                             <p>#{controllerContratistas.mensaje}</p>
@@ -260,7 +260,7 @@
                                 </div>
                             </div>
                             <h:form style="padding-top: 10px">
-                                <h:commandButton action="#{controllerContratistas.eliminar(id)}" class="btn btn-danger" value="Eliminar"></h:commandButton>
+                                <h:commandButton action="#{controllerContratistas.eliminar(contratista.idcontratistas)}" class="btn btn-danger" value="Eliminar"></h:commandButton>
                             </h:form>
 
                         </h:column>

@@ -4,7 +4,7 @@
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:f="http://xmlns.jcp.org/jsf/core">
     <h:head>
-        <title>contratistas</title>
+        <title>inventario</title>
         <!-- link bootstrap cdn -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"></link>
         <!-- fin de link bootstrap -->
@@ -45,7 +45,7 @@
                                                         <div class="col-12">
                                                             <div class="form-floating">
                                                                 <h:inputText value="#{controllerOrdenSalida.orden.nombreMaterial}" id="material" class="form-control"  />
-                                                                <label for="material">Nombre del material</label>
+                                                                <label for="material">Nombre del Material</label>
                                                             </div>
                                                         </div>
                                                         <div class="col-12 mt-3">
@@ -72,29 +72,19 @@
 
                                                         <div class="col-12 mt-3">
                                                             <div class="form-floating">
-                                                                <h:inputText value="#{controllerContratistas.contratista.direccionObra}" id="descripcion" class="form-control" />
-                                                                <label for="descripcion"></label>
+                                                                <h:inputText value="#{controllerOrdenSalida.orden.direccion}" id="descripcion" class="form-control" />
+                                                                <label for="descripcion">direcci'on de obra</label>
                                                             </div>
                                                         </div>
 
 
-                                                        <div class="col-12 mt-3">
-                                                            <div class="form-floating">
-                                                                <h:inputText value="#{controllerContratistas.contratista.fechaContrato}" id="fecha" class="form-control" />
-                                                                <label for="fecha">Fecha de contrato</label>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 mt-3">
-                                                            <div class="form-floating">
-                                                                <h:inputText value="#{controllerContratistas.contratista.valorContrato}" id="valor" class="form-control" />
-                                                                <label for="valor">Valor del contrato</label>
-                                                            </div>
-                                                        </div>
+                                                      
+                                                        
 
 
                                                         <div class="d-grid gap-2" style="padding-top: 15px">
                                                             <h:form>
-                                                                <h:commandButton action="#{controllerContratistas.create()}" class="btn btn-primary" value="Guardar"></h:commandButton>
+                                                                <h:commandButton action="#{controllerOrdenSalida.create()}" class="btn btn-primary" value="Guardar"></h:commandButton>
                                                                 <p>#{controllerContratistas.mensaje}</p>
                                                             </h:form>
 
@@ -124,45 +114,39 @@
             <!-- container de tabla  -->
             <div class="col-12 border-top" style="padding-top: 15px;" >
 
-                <h:dataTable id="tabla"  class="table table-secondary table-striped"  value="#{controllerContratistas.getALLContratistas()}" var="contratista">
+                <h:dataTable id="tabla"  class="table table-secondary table-striped"  value="#{controllerOrdenSalida.getALLOrdenSalida()}" var="OrdenSalida">
                     8
                     <tbody>
 
                         <h:column>
                             <f:facet name="header">Id</f:facet>
-                            <h:outputText value="#{contratista.idcontratistas}"></h:outputText>
+                            <h:outputText value="#{OrdenSalida.idOrden}"></h:outputText>
 
                         </h:column>
                         <h:column>
-                            <f:facet name="header">Rut</f:facet>
-                            <h:outputText value="#{contratista.rut}"> </h:outputText>
+                            <f:facet name="header">Nombre Material</f:facet>
+                            <h:outputText value="#{OrdenSalida.nombreMaterial}"> </h:outputText>
                         </h:column>
 
 
                         <h:column>
                             <f:facet name="header">Nombre Contratista</f:facet>
-                            <h:outputText value="#{contratista.nombreContratista}"></h:outputText>
+                            <h:outputText value="#{OrdenSalida.nombreContratista}"></h:outputText>
                         </h:column>
                         <h:column>
-                            <f:facet name="header">telefono</f:facet>
-                            <h:outputText value="#{contratista.telefono}"></h:outputText>
+                            <f:facet name="header">Cantidad</f:facet>
+                            <h:outputText value="#{OrdenSalida.cantidad}"></h:outputText>
                         </h:column>
                         <h:column>
-                            <f:facet name="header">correo</f:facet>
-                            <h:outputText value="#{contratista.correo}"></h:outputText>
+                            <f:facet name="header">Fecha salida</f:facet>
+                            <h:outputText value="#{OrdenSalida.fechaSalida}"></h:outputText>
                         </h:column>
                         <h:column>
-                            <f:facet name="header">direccion Obra</f:facet>
-                            <h:outputText value="#{contratista.direccionObra}"></h:outputText>
+                            <f:facet name="header">Dirección</f:facet>
+                            <h:outputText value="#{OrdenSalida.direccion}"></h:outputText>
                         </h:column>
-                        <h:column>
-                            <f:facet name="header">fecha de contrato</f:facet>
-                            <h:outputText value="#{contratista.fechaContrato}"></h:outputText>
-                        </h:column>
-                        <h:column>
-                            <f:facet name="header">valor de contrato</f:facet>
-                            <h:outputText value="#{contratista.valorContrato}"></h:outputText>
-                        </h:column>
+                      
+                        
                         <h:column>
                             <f:facet name="header">OPCIONES</f:facet>
                             <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -173,7 +157,7 @@
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h1 class="modal-title fs-5" id="exampleModalLabel" >Actualizar contratista</h1>
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel" >Actualizar Orden de Salida</h1>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
@@ -181,7 +165,7 @@
                                                 <div class="row">
                                                     <div class="col-12">
                                                         <div class="form-floating">
-                                                            <h:inputText value="#{controllerContratistas.contratista.idcontratistas}" id="id" class="form-control"  />
+                                                            <h:inputText value="#{controllerOrdenSalida.orden.idOrden}" id="id" class="form-control"  />
                                                             <label for="id">ID</label>
                                                         </div>
                                                     </div>
@@ -189,59 +173,49 @@
                                                     <div class="row">
                                                         <div class="col-12">
                                                             <div class="form-floating">
-                                                                <h:inputText value="#{controllerContratistas.contratista.rut}" id="rut" class="form-control"  />
-                                                                <label for="rut">Rut</label>
+                                                                <h:inputText value="#{controllerOrdenSalida.orden.nombreMaterial}" id="nombreMaterial" class="form-control"  />
+                                                                <label for="rut">Nombre Material</label>
                                                             </div>
                                                         </div>
                                                         <div class="col-12 mt-3">
                                                             <div class="form-floating">
-                                                                <h:inputText value="#{controllerContratistas.contratista.nombreContratista}" id="nombre" class="form-control" />
+                                                                <h:inputText value="#{controllerOrdenSalida.orden.nombreContratista}" id="nombre" class="form-control" />
                                                                 <label for="nombre">Nombre Contratista</label>
                                                             </div>
                                                         </div>
                                                         <div class="col-12 mt-3">
 
                                                             <div class="form-floating">
-                                                                <h:inputText value="#{controllerContratistas.contratista.telefono}" id="telefono" class="form-control" />
-                                                                <label for="telefono">Telefono</label>
+                                                                <h:inputText value="#{controllerOrdenSalida.orden.cantidad}" id="cantidad" class="form-control" />
+                                                                <label for="cantidad">Cantidad</label>
                                                             </div>
                                                         </div>
 
 
                                                         <div class="col-12 mt-3">
                                                             <div class="form-floating">
-                                                                <h:inputText value="#{controllerContratistas.contratista.correo}" id="correo" class="form-control" />
-                                                                <label for="correo">Correo</label>
+                                                                <h:inputText value="#{controllerOrdenSalida.orden.fechaSalida}" id="fecha" class="form-control" />
+                                                                <label for="fecha">Fecha Salida</label>
                                                             </div>
                                                         </div>
 
                                                         <div class="col-12 mt-3">
                                                             <div class="form-floating">
-                                                                <h:inputText value="#{controllerContratistas.contratista.direccionObra}" id="descripcion" class="form-control" />
-                                                                <label for="descripcion">Direccion obra</label>
+                                                                <h:inputText value="#{controllerOrdenSalida.orden.direccion}" id="dirección" class="form-control" />
+                                                                <label for="descripcion">Direccion</label>
                                                             </div>
                                                         </div>
 
 
-                                                        <div class="col-12 mt-3">
-                                                            <div class="form-floating">
-                                                                <h:inputText value="#{controllerContratistas.contratista.fechaContrato}" id="fecha" class="form-control" />
-                                                                <label for="fecha">Fecha de contrato</label>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 mt-3">
-                                                            <div class="form-floating">
-                                                                <h:inputText value="#{controllerContratistas.contratista.valorContrato}" id="valor" class="form-control" />
-                                                                <label for="valor">Valor del contrato</label>
-                                                            </div>
-                                                        </div>
+
+                                                       
 
                                                         <div class="d-grid gap-2" style="padding-top: 15px">
                                                             <h:form>
-                                                                <h:commandButton action="#{controllerContratistas.update(id)}" class="btn btn-warning" value="Guardar"></h:commandButton>
+                                                                <h:commandButton action="#{controllerOrdenSalida.update(OrdenSalida.idOrden)}" class="btn btn-warning" value="Guardar"></h:commandButton>
                                                             </h:form>
 
-                                                            <p>#{controllerContratistas.mensaje}</p>
+                                                            <p>#{controllerOrdenSalida.message}</p>
                                                         </div>
 
 
@@ -256,7 +230,7 @@
                                 </div>
                             </div>
                             <h:form style="padding-top: 10px">
-                                <h:commandButton action="#{controllerContratistas.eliminar(id)}" class="btn btn-danger" value="Eliminar"></h:commandButton>
+                                <h:commandButton action="#{controllerOrdenSalida.delete(OrdenSalida.idOrden)}" class="btn btn-danger" value="Eliminar"></h:commandButton>
                             </h:form>
 
                         </h:column>
