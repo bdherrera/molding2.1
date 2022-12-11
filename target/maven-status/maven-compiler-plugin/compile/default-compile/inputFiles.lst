@@ -1,7 +1,10 @@
-C:\Users\Admin\OneDrive\Documentos\NetBeansProjects\molding3\src\main\java\com\mycompany\molding3\model\Contratistas.java
-C:\Users\Admin\OneDrive\Documentos\NetBeansProjects\molding3\src\main\java\com\mycompany\molding3\service\ContratistasFacade.java
-C:\Users\Admin\OneDrive\Documentos\NetBeansProjects\molding3\src\main\java\com\mycompany\molding3\service\AbstractFacade.java
-C:\Users\Admin\OneDrive\Documentos\NetBeansProjects\molding3\src\main\java\com\mycompany\molding3\controller\controllerOrdenSalida.java
-C:\Users\Admin\OneDrive\Documentos\NetBeansProjects\molding3\src\main\java\com\mycompany\molding3\model\OrdenSalida.java
-C:\Users\Admin\OneDrive\Documentos\NetBeansProjects\molding3\src\main\java\com\mycompany\molding3\service\OrdenSalidaFacade.java
-C:\Users\Admin\OneDrive\Documentos\NetBeansProjects\molding3\src\main\java\com\mycompany\molding3\controller\controllerContratistas.java
+C:\Users\AdminSena\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\controller\controllerContratistas.java
+C:\Users\AdminSena\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\model\Contratistas.java
+C:\Users\AdminSena\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\controller\controllerProveedores.java
+C:\Users\AdminSena\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\model\OrdenSalida.java
+C:\Users\AdminSena\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\model\Proveedores.java
+C:\Users\AdminSena\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\service\OrdenSalidaFacade.java
+C:\Users\AdminSena\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\service\ProveedoresFacade.java
+C:\Users\AdminSena\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\controller\controllerOrdenSalida.java
+C:\Users\AdminSena\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\service\AbstractFacade.java
+C:\Users\AdminSena\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\service\ContratistasFacade.java
