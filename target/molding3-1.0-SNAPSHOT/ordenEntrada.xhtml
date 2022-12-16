@@ -154,84 +154,10 @@
 
                         <h:column>
                             <f:facet name="header">Opciones</f:facet>
-                            <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                Actualizar
-                            </button>
-                            <!-- Modal -->
-                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h1 class="modal-title fs-5" id="exampleModalLabel" >Actualizar Materiales</h1>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <h:form >
-                                                <div class="row">
-                                                    <div class="col-12">
-                                                        <div class="form-floating">
-                                                            <h:inputText value="#{controllerOrdenEntrada.entrada.idOrdenEntrada}" id="id" class="form-control"  />
-                                                            <label for="id">Id</label>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="row">
-                                                        <div class="col-12">
-                                                            <div class="form-floating">
-                                                                <h:inputText value="#{controllerOrdenEntrada.entrada.nombreMaterial}" id="nombreMaterial" class="form-control"  />
-                                                                <label for="nombre">Nombre Material</label>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 mt-3">
-                                                            <div class="form-floating">
-                                                                <h:inputText value="#{controllerOrdenEntrada.entrada.nombreProveedor}" id="cantidad" class="form-control" />
-                                                                <label for="proveedor">Nombre Proveedor</label>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 mt-3">
-
-                                                            <div class="form-floating">
-                                                                <h:inputText value="#{controllerOrdenEntrada.entrada.fechaCompra}" id="fecha" class="form-control" />
-                                                                <label for="fecha">Fecha de Compra</label>
-                                                            </div>
-                                                        </div>
-
-
-                                                        <div class="col-12 mt-3">
-
-                                                            <div class="form-floating">
-                                                                <h:inputText value="#{controllerOrdenEntrada.entrada.ubicacion}" id="Ubicacion" class="form-control" />
-                                                                <label for="ubicacion">Ubicación</label>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="col-12 mt-3">
-
-                                                            <div class="form-floating">
-                                                                <h:inputText value="#{controllerOrdenEntrada.entrada.pago}" id="pago" class="form-control" />
-                                                                <label for="pago">Pago</label>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="d-grid gap-2" style="padding-top: 15px">
-                                                            <h:form>
-                                                                <h:commandButton action="#{controllerOrdenEntrada.update(Entrada.idOrdenEntrada)}" class="btn btn-warning" value="Guardar"></h:commandButton>
-                                                            </h:form>
-
-                                                            <p>#{controllerOrdenEntrada.message}</p>
-                                                        </div>
-
-
-                                                    </div>
-
-                                                </div>
-
-                                            </h:form>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
+                            <h:form>
+                                <h:commandButton action="ActualizarOrdenEntrada.xhtml"class="btn btn-warning" ></h:commandButton>
+                            </h:form>
+                            
                             <h:form style="padding-top: 10px">
                                 <h:commandButton action="#{controllerOrdenEntrada.delete(Entrada.idOrdenEntrada)}" class="btn btn-danger" value="Eliminar"></h:commandButton>
                             </h:form>

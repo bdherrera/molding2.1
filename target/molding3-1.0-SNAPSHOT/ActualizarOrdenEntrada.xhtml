@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <f:view>
+
+
+            <h:form>
+                <h1><h:outputText value="Create/Edit"/></h1>
+                <h:panelGrid columns="2">
+                    <h:outputLabel value="IdOrdenEntrada:" for="idOrdenEntrada" />
+                    <h:inputText id="idOrdenEntrada" value="#{controllerOrdenEntrada.entrada.idOrdenEntrada}" title="IdOrdenEntrada" required="true" requiredMessage="The IdOrdenEntrada field is required."/>
+                    <h:outputLabel value="NombreMaterial:" for="nombreMaterial" />
+                    <h:inputText id="nombreMaterial" value="#{controllerOrdenEntrada.entrada.nombreMaterial}" title="NombreMaterial" />
+                    <h:outputLabel value="NombreProveedor:" for="nombreProveedor" />
+                    <h:inputText id="nombreProveedor" value="#{controllerOrdenEntrada.entrada.nombreProveedor}" title="NombreProveedor" />
+                    <h:outputLabel value="FechaCompra:" for="fechaCompra" />
+                    <h:inputText id="fechaCompra" value="#{controllerOrdenEntrada.entrada.fechaCompra}" title="FechaCompra" />
+                    <h:outputLabel value="Ubicacion:" for="ubicacion" />
+                    <h:inputText id="ubicacion" value="#{controllerOrdenEntrada.entrada.ubicacion}" title="Ubicacion" />
+                    <h:outputLabel value="Pago:" for="pago" />
+                    <h:inputText id="pago" value="#{controllerOrdenEntrada.entrada.pago}" title="Pago" />
+                </h:panelGrid>
+
+
+                <h:commandButton action="#{controllerOrdenEntrada.update(controllerOrdenEntrada.entrada.idOrdenEntrada)}" value="Actualizar">
+                </h:commandButton>
+                <h:commandButton action="ordenEntrada.xhtml" value="regresar">
+                </h:commandButton>
+            </h:form>
+        </f:view>
+
+
+    </h:body>
+</html>
+
