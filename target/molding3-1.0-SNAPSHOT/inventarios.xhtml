@@ -22,7 +22,7 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-lg-9">
-                                <h1 class="font-weight-bold mb-0">Inventarios</h1>
+                                <h1 class="font-weight-bold mb-0">Orden de salida</h1>
                                 <p class="lead text-muted"></p>
                             </div>
                             <div class="col-lg-3 container-fluid d-flex" >
@@ -30,6 +30,12 @@
                                 <button type="button" class="btn btn-success"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                     crear nuevo registro
                                 </button>
+                                <h:form>
+                                    <h:commandButton action="ordenEntrada.xhtml" class="btn btn-success" value="Orden de Entrada"></h:commandButton>
+                                </h:form>
+                                <h:form>
+                                    <h:commandButton action="materiales.xhtml" class="btn btn-success" value="materiales"></h:commandButton>
+                                </h:form>
 
                                 <!-- Modal -->
                                 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -78,8 +84,8 @@
                                                         </div>
 
 
-                                                      
-                                                        
+
+
 
 
                                                         <div class="d-grid gap-2" style="padding-top: 15px">
@@ -145,8 +151,8 @@
                             <f:facet name="header">Dirección</f:facet>
                             <h:outputText value="#{OrdenSalida.direccion}"></h:outputText>
                         </h:column>
-                      
-                        
+
+
                         <h:column>
                             <f:facet name="header">OPCIONES</f:facet>
                             <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -208,7 +214,7 @@
 
 
 
-                                                       
+
 
                                                         <div class="d-grid gap-2" style="padding-top: 15px">
                                                             <h:form>

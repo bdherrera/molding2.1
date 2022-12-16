@@ -1,80 +1,25 @@
-<<<<<<< HEAD
-=======
-C:\Users\Dell\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\service\ContratistasFacade.java
-C:\Users\Dell\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\controller\controllerMateriales.java
-C:\Users\Dell\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\controller\controllerProveedores.java
-C:\Users\Dell\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\service\UsuariosFacade.java
-C:\Users\Dell\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\controller\controllerClientes.java
-C:\Users\Dell\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\service\ProveedoresFacade.java
-C:\Users\Dell\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\model\OrdenEntrada.java
-C:\Users\Dell\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\controller\controllerOrdenSalida.java
-C:\Users\Dell\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\service\ClientesFacade.java
-C:\Users\Dell\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\service\AbstractFacade.java
-C:\Users\Dell\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\service\OrdenEntradaFacade.java
-C:\Users\Dell\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\controller\controllerUsuarios.java
-C:\Users\Dell\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\model\Usuarios.java
-C:\Users\Dell\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\model\Clientes.java
-C:\Users\Dell\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\model\Proveedores.java
-C:\Users\Dell\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\service\OrdenSalidaFacade.java
-C:\Users\Dell\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\controller\ControllerOrdenEntrada.java
-C:\Users\Dell\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\model\Materiales.java
-C:\Users\Dell\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\controller\controllerContratistas.java
-C:\Users\Dell\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\model\Contratistas.java
-C:\Users\Dell\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\service\MaterialesFacade.java
-C:\Users\Dell\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\model\OrdenSalida.java
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> a26d9037dd03a3280d2798662a5a318960b2bfd0
-C:\Users\Admin\OneDrive\Documentos\NetBeansProjects\molding3\src\main\java\com\mycompany\molding3\model\Materiales.java
+C:\Users\Admin\OneDrive\Documentos\NetBeansProjects\molding3\src\main\java\com\mycompany\molding3\controller\controllerRegistrar.java
 C:\Users\Admin\OneDrive\Documentos\NetBeansProjects\molding3\src\main\java\com\mycompany\molding3\model\Clientes.java
-C:\Users\Admin\OneDrive\Documentos\NetBeansProjects\molding3\src\main\java\com\mycompany\molding3\service\AbstractFacade.java
 C:\Users\Admin\OneDrive\Documentos\NetBeansProjects\molding3\src\main\java\com\mycompany\molding3\service\MaterialesFacade.java
-C:\Users\Admin\OneDrive\Documentos\NetBeansProjects\molding3\src\main\java\com\mycompany\molding3\service\OrdenEntradaFacade.java
 C:\Users\Admin\OneDrive\Documentos\NetBeansProjects\molding3\src\main\java\com\mycompany\molding3\controller\controllerClientes.java
+C:\Users\Admin\OneDrive\Documentos\NetBeansProjects\molding3\src\main\java\com\mycompany\molding3\controller\controllerMateriales.java
+C:\Users\Admin\OneDrive\Documentos\NetBeansProjects\molding3\src\main\java\com\mycompany\molding3\model\Registrar.java
+C:\Users\Admin\OneDrive\Documentos\NetBeansProjects\molding3\src\main\java\com\mycompany\molding3\controller\controllerProveedores.java
+C:\Users\Admin\OneDrive\Documentos\NetBeansProjects\molding3\src\main\java\com\mycompany\molding3\service\UsuariosFacade.java
+C:\Users\Admin\OneDrive\Documentos\NetBeansProjects\molding3\src\main\java\com\mycompany\molding3\controller\ControllerOrdenEntrada.java
+C:\Users\Admin\OneDrive\Documentos\NetBeansProjects\molding3\src\main\java\com\mycompany\molding3\controller\controllerContratistas.java
+C:\Users\Admin\OneDrive\Documentos\NetBeansProjects\molding3\src\main\java\com\mycompany\molding3\model\Materiales.java
+C:\Users\Admin\OneDrive\Documentos\NetBeansProjects\molding3\src\main\java\com\mycompany\molding3\service\AbstractFacade.java
+C:\Users\Admin\OneDrive\Documentos\NetBeansProjects\molding3\src\main\java\com\mycompany\molding3\service\OrdenEntradaFacade.java
 C:\Users\Admin\OneDrive\Documentos\NetBeansProjects\molding3\src\main\java\com\mycompany\molding3\controller\controllerOrdenSalida.java
 C:\Users\Admin\OneDrive\Documentos\NetBeansProjects\molding3\src\main\java\com\mycompany\molding3\model\OrdenSalida.java
 C:\Users\Admin\OneDrive\Documentos\NetBeansProjects\molding3\src\main\java\com\mycompany\molding3\model\Usuarios.java
 C:\Users\Admin\OneDrive\Documentos\NetBeansProjects\molding3\src\main\java\com\mycompany\molding3\service\OrdenSalidaFacade.java
 C:\Users\Admin\OneDrive\Documentos\NetBeansProjects\molding3\src\main\java\com\mycompany\molding3\service\ProveedoresFacade.java
-C:\Users\Admin\OneDrive\Documentos\NetBeansProjects\molding3\src\main\java\com\mycompany\molding3\controller\controllerMateriales.java
 C:\Users\Admin\OneDrive\Documentos\NetBeansProjects\molding3\src\main\java\com\mycompany\molding3\controller\controllerUsuarios.java
 C:\Users\Admin\OneDrive\Documentos\NetBeansProjects\molding3\src\main\java\com\mycompany\molding3\model\Contratistas.java
-C:\Users\Admin\OneDrive\Documentos\NetBeansProjects\molding3\src\main\java\com\mycompany\molding3\controller\controllerProveedores.java
 C:\Users\Admin\OneDrive\Documentos\NetBeansProjects\molding3\src\main\java\com\mycompany\molding3\model\Proveedores.java
 C:\Users\Admin\OneDrive\Documentos\NetBeansProjects\molding3\src\main\java\com\mycompany\molding3\service\ClientesFacade.java
 C:\Users\Admin\OneDrive\Documentos\NetBeansProjects\molding3\src\main\java\com\mycompany\molding3\service\ContratistasFacade.java
+C:\Users\Admin\OneDrive\Documentos\NetBeansProjects\molding3\src\main\java\com\mycompany\molding3\service\RegistrarFacade.java
 C:\Users\Admin\OneDrive\Documentos\NetBeansProjects\molding3\src\main\java\com\mycompany\molding3\model\OrdenEntrada.java
-C:\Users\Admin\OneDrive\Documentos\NetBeansProjects\molding3\src\main\java\com\mycompany\molding3\service\UsuariosFacade.java
-C:\Users\Admin\OneDrive\Documentos\NetBeansProjects\molding3\src\main\java\com\mycompany\molding3\controller\ControllerOrdenEntrada.java
-C:\Users\Admin\OneDrive\Documentos\NetBeansProjects\molding3\src\main\java\com\mycompany\molding3\controller\controllerContratistas.java
-<<<<<<< HEAD
-=======
-=======
-C:\Users\kevv_\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\service\OrdenEntradaFacade.java
-C:\Users\kevv_\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\controller\controllerProveedores.java
-C:\Users\kevv_\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\controller\controllerMateriales.java
-C:\Users\kevv_\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\model\OrdenSalida.java
-C:\Users\kevv_\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\controller\ControllerOrdenEntrada.java
-C:\Users\kevv_\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\controller\controllerUsuarios.java
-C:\Users\kevv_\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\service\ContratistasFacade.java
-C:\Users\kevv_\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\controller\controllerOrdenSalida.java
-C:\Users\kevv_\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\model\Usuarios.java
-C:\Users\kevv_\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\controller\controllerClientes.java
-C:\Users\kevv_\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\service\MaterialesFacade.java
-C:\Users\kevv_\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\model\Clientes.java
-C:\Users\kevv_\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\model\OrdenEntrada.java
-C:\Users\kevv_\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\model\Proveedores.java
-C:\Users\kevv_\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\service\AbstractFacade.java
-C:\Users\kevv_\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\service\ProveedoresFacade.java
-C:\Users\kevv_\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\controller\controllerContratistas.java
-C:\Users\kevv_\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\model\Materiales.java
-C:\Users\kevv_\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\model\Contratistas.java
-C:\Users\kevv_\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\service\UsuariosFacade.java
-C:\Users\kevv_\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\service\ClientesFacade.java
-C:\Users\kevv_\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\service\OrdenSalidaFacade.java
->>>>>>> c0de487c572460f723b95799c7cafd08d170bbc2
->>>>>>> 2febb5e0bb5a40f38d9e189d25a6fba0c4612cde
->>>>>>> 8731cb2f6a4abd28fdebe376c7bf27cd53589b66
->>>>>>> a26d9037dd03a3280d2798662a5a318960b2bfd0

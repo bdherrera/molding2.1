@@ -30,6 +30,12 @@
                                 <button type="button" class="btn btn-success"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                     Crear Orden Entrada Materiales
                                 </button>
+                                  <h:form>
+                                    <h:commandButton action="inventarios.xhtml" class="btn btn-success" value="Orden de Entrada"></h:commandButton>
+                                </h:form>
+                                <h:form>
+                                    <h:commandButton action="materiales.xhtml" class="btn btn-success" value="materiales"></h:commandButton>
+                                </h:form>
 
                                 <!-- Modal -->
                                 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -42,12 +48,7 @@
                                             <div class="modal-body">
                                                 <h:form>
                                                     <div class="row">
-                                                        <div class="col-12">
-                                                            <div class="form-floating">
-                                                                <h:inputText value="#{controllerOrdenEntrada.entrada.idOrdenEntrada}" id="id" class="form-control"  />
-                                                                <label for="id">Id Orden de Entrada</label>
-                                                            </div>
-                                                        </div>
+
                                                         <div class="col-12 mt-3">
                                                             <div class="form-floating">
                                                                 <h:inputText value="#{controllerOrdenEntrada.entrada.nombreMaterial}" id="nombreMaterial" class="form-control" />
@@ -118,7 +119,7 @@
             <div class="col-12 border-top" style="padding-top: 15px;" >
 
                 <h:dataTable id="tabla"  class="table table-secondary table-striped"  value="#{controllerOrdenEntrada.ALLOrdenEntrada}" var="Entrada">
-                    8
+
                     <tbody>
 
                         <h:column>
@@ -155,9 +156,9 @@
                         <h:column>
                             <f:facet name="header">Opciones</f:facet>
                             <h:form>
-                                <h:commandButton action="ActualizarOrdenEntrada.xhtml"class="btn btn-warning" ></h:commandButton>
+                                <h:commandButton action="ActualizarOrdenEntrada.xhtml" class="btn btn-warning"></h:commandButton>
                             </h:form>
-                            
+
                             <h:form style="padding-top: 10px">
                                 <h:commandButton action="#{controllerOrdenEntrada.delete(Entrada.idOrdenEntrada)}" class="btn btn-danger" value="Eliminar"></h:commandButton>
                             </h:form>
