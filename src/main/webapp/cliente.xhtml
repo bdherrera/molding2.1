@@ -141,7 +141,7 @@
             <div class="col-12 border-top" style="padding-top: 15px;" >
 
                 <h:dataTable id="tabla"  class="table table-secondary table-striped"  value="#{controllerClientes.getALLClientes()}" var="clientes">
-                    
+
                     <tbody>
 
                         <h:column>
@@ -178,18 +178,20 @@
                         </h:column>
                         <h:column>
                             <f:facet name="header">direccion</f:facet>
-                            <h:outputText value="#{clientes.direccion}}"></h:outputText>
+                            <h:outputText value="#{clientes.direccion}"></h:outputText>
                         </h:column>
                         <h:column>
                             <f:facet name="header">tipo de contrato</f:facet>
                             <h:outputText value="#{clientes.tipoContrato}"></h:outputText>
                         </h:column>
-                        
+
                         <h:column>
                             <f:facet name="header">OPCIONES</f:facet>
-                            <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                Actualizar
-                            </button>
+                            <h:form>
+                                <h:commandButton  value="Actualizar" style="width:90px" class="btn btn-warning" action="actualizarClientes.xhtml" > 
+                                    <!-- Boton de actualizar -->
+                                </h:commandButton>
+                            </h:form>
                             <!-- Modal -->
                             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog">
