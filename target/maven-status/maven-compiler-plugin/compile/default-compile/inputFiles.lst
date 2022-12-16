@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\Admin\OneDrive\Documentos\NetBeansProjects\molding3\src\main\java\com\mycompany\molding3\model\Materiales.java
 C:\Users\Admin\OneDrive\Documentos\NetBeansProjects\molding3\src\main\java\com\mycompany\molding3\model\Clientes.java
 C:\Users\Admin\OneDrive\Documentos\NetBeansProjects\molding3\src\main\java\com\mycompany\molding3\service\AbstractFacade.java
@@ -20,3 +21,27 @@ C:\Users\Admin\OneDrive\Documentos\NetBeansProjects\molding3\src\main\java\com\m
 C:\Users\Admin\OneDrive\Documentos\NetBeansProjects\molding3\src\main\java\com\mycompany\molding3\service\UsuariosFacade.java
 C:\Users\Admin\OneDrive\Documentos\NetBeansProjects\molding3\src\main\java\com\mycompany\molding3\controller\ControllerOrdenEntrada.java
 C:\Users\Admin\OneDrive\Documentos\NetBeansProjects\molding3\src\main\java\com\mycompany\molding3\controller\controllerContratistas.java
+=======
+C:\Users\kevv_\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\service\OrdenEntradaFacade.java
+C:\Users\kevv_\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\controller\controllerProveedores.java
+C:\Users\kevv_\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\model\OrdenSalida.java
+C:\Users\kevv_\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\controller\ControllerOrdenEntrada.java
+C:\Users\kevv_\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\controller\controllerUsuarios.java
+C:\Users\kevv_\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\service\ContratistasFacade.java
+C:\Users\kevv_\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\controller\controllerOrdenSalida.java
+C:\Users\kevv_\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\model\Usuarios.java
+C:\Users\kevv_\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\controller\controllerClientes.java
+C:\Users\kevv_\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\service\MaterialesFacade.java
+C:\Users\kevv_\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\model\Clientes.java
+C:\Users\kevv_\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\model\OrdenEntrada.java
+C:\Users\kevv_\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\model\Proveedores.java
+C:\Users\kevv_\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\service\AbstractFacade.java
+C:\Users\kevv_\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\service\ProveedoresFacade.java
+C:\Users\kevv_\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\controller\controllerContratistas.java
+C:\Users\kevv_\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\model\Materiales.java
+C:\Users\kevv_\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\model\Contratistas.java
+C:\Users\kevv_\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\service\UsuariosFacade.java
+C:\Users\kevv_\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\service\ClientesFacade.java
+C:\Users\kevv_\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\controller\contollerMateriales.java
+C:\Users\kevv_\Documents\NetBeansProjects\molding2.1\src\main\java\com\mycompany\molding3\service\OrdenSalidaFacade.java
+>>>>>>> c0de487c572460f723b95799c7cafd08d170bbc2
