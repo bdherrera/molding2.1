@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>clientes</title>
+        <!-- link bootstrap cdn -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"></link>
+        <!-- fin de link bootstrap -->
+
+
+
+
+        <!-- link de cnd de iconos -->
+        <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet"></link>
+        <script src="https://kit.fontawesome.com/fa3d9ebc07.js" crossorigin="anonymous"></script>
+        <!-- fin de link de iconos -->   
+    </h:head>
+    <h:body>
+        <f:view>
+
+
+            <h:form>
+                <h1><h:outputText value="Create/Edit"/></h1>
+                <h:panelGrid columns="2">
+                    <div class="col-12 mt-3">
+                        <div class="form-floating">
+                            <h:outputLabel value="Idproveedores:" for="idproveedores" />
+                            <h:inputText id="idproveedores" value="#{controllerProveedores.proveedores.idproveedores}" title="Idproveedores" required="true" requiredMessage="The Idproveedores field is required."/>
+                        </div>
+                    </div>
+                    <h:outputLabel value="CantidadMaterial:" for="cantidadMaterial" />
+                    <h:inputText id="cantidadMaterial" value="#{controllerProveedores.proveedores.cantidadMaterial}" title="CantidadMaterial" />
+                    <h:outputLabel value="CodigoMaterial:" for="codigoMaterial" />
+                    <h:inputText id="codigoMaterial" value="#{controllerProveedores.proveedores.codigoMaterial}" title="CodigoMaterial" />
+                    <h:outputLabel value="DireccionProveedor:" for="direccionProveedor" />
+                    <h:inputText id="direccionProveedor" value="#{controllerProveedores.proveedores.direccionProveedor}" title="DireccionProveedor" />
+                    <h:outputLabel value="NombreMaterial:" for="nombreMaterial" />
+                    <h:inputText id="nombreMaterial" value="#{controllerProveedores.proveedores.nombreMaterial}" title="NombreMaterial" />
+                    <h:outputLabel value="NombreProveedor:" for="nombreProveedor" />
+                    <h:inputText id="nombreProveedor" value="#{controllerProveedores.proveedores.nombreProveedor}" title="NombreProveedor" />
+                    <h:outputLabel value="PrecioMaterial:" for="precioMaterial" />
+                    <h:inputText id="precioMaterial" value="#{controllerProveedores.proveedores.precioMaterial}" title="PrecioMaterial" />
+                    <h:outputLabel value="TelefonoProveedor:" for="telefonoProveedor" />
+                    <h:inputText id="telefonoProveedor" value="#{controllerProveedores.proveedores.telefonoProveedor}" title="TelefonoProveedor" />
+                </h:panelGrid>
+                <h:commandButton value="actualizar"  style="width:90px" class="btn btn-warning" action="#{controllerProveedores.update(controllerProveedores.proveedores.idproveedores)}">
+
+                </h:commandButton>
+                <h:commandButton  value="regresar" style="width:90px" class="btn btn-warning" action="proveedores.xhtml">
+
+                </h:commandButton>
+            </h:form>
+        </f:view>
+
+    </h:body>
+</html>
+

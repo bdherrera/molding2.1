@@ -6,132 +6,77 @@ package com.mycompany.molding3.model;
 
 import java.io.Serializable;
 import javax.persistence.Basic;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
-import javax.validation.constraints.NotNull;
+import javax.persistence.Table;
 import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  *
- * @author AdminSena
+ * @author kevv_
  */
 @Entity
+@Table(name = "proveedores")
 @XmlRootElement
 @NamedQueries({
     @NamedQuery(name = "Proveedores.findAll", query = "SELECT p FROM Proveedores p"),
-    @NamedQuery(name = "Proveedores.findByCodproveedores", query = "SELECT p FROM Proveedores p WHERE p.codproveedores = :codproveedores"),
-    @NamedQuery(name = "Proveedores.findByNombreProveedor", query = "SELECT p FROM Proveedores p WHERE p.nombreProveedor = :nombreProveedor"),
-    @NamedQuery(name = "Proveedores.findByDireccionProveedor", query = "SELECT p FROM Proveedores p WHERE p.direccionProveedor = :direccionProveedor"),
-    @NamedQuery(name = "Proveedores.findByTelefonoProveedor", query = "SELECT p FROM Proveedores p WHERE p.telefonoProveedor = :telefonoProveedor"),
-    @NamedQuery(name = "Proveedores.findByNombreMaterial", query = "SELECT p FROM Proveedores p WHERE p.nombreMaterial = :nombreMaterial"),
-    @NamedQuery(name = "Proveedores.findByCodMaterial", query = "SELECT p FROM Proveedores p WHERE p.codMaterial = :codMaterial"),
+    @NamedQuery(name = "Proveedores.findByIdproveedores", query = "SELECT p FROM Proveedores p WHERE p.idproveedores = :idproveedores"),
     @NamedQuery(name = "Proveedores.findByCantidadMaterial", query = "SELECT p FROM Proveedores p WHERE p.cantidadMaterial = :cantidadMaterial"),
-    @NamedQuery(name = "Proveedores.findByPreciosMaterial", query = "SELECT p FROM Proveedores p WHERE p.preciosMaterial = :preciosMaterial")})
+    @NamedQuery(name = "Proveedores.findByCodigoMaterial", query = "SELECT p FROM Proveedores p WHERE p.codigoMaterial = :codigoMaterial"),
+    @NamedQuery(name = "Proveedores.findByDireccionProveedor", query = "SELECT p FROM Proveedores p WHERE p.direccionProveedor = :direccionProveedor"),
+    @NamedQuery(name = "Proveedores.findByNombreMaterial", query = "SELECT p FROM Proveedores p WHERE p.nombreMaterial = :nombreMaterial"),
+    @NamedQuery(name = "Proveedores.findByNombreProveedor", query = "SELECT p FROM Proveedores p WHERE p.nombreProveedor = :nombreProveedor"),
+    @NamedQuery(name = "Proveedores.findByPrecioMaterial", query = "SELECT p FROM Proveedores p WHERE p.precioMaterial = :precioMaterial"),
+    @NamedQuery(name = "Proveedores.findByTelefonoProveedor", query = "SELECT p FROM Proveedores p WHERE p.telefonoProveedor = :telefonoProveedor")})
 public class Proveedores implements Serializable {
 
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Basic(optional = false)
-    private Integer codproveedores;
-    @Basic(optional = false)
-    @NotNull
-    @Size(min = 1, max = 45)
-    private String nombreProveedor;
-    @Basic(optional = false)
-    @NotNull
-    @Size(min = 1, max = 45)
-    private String direccionProveedor;
-    @Basic(optional = false)
-    @NotNull
-    @Size(min = 1, max = 45)
-    private String telefonoProveedor;
-    @Basic(optional = false)
-    @NotNull
-    @Size(min = 1, max = 45)
-    private String nombreMaterial;
-    @Basic(optional = false)
-    @NotNull
-    @Size(min = 1, max = 45)
-    private String codMaterial;
-    @Basic(optional = false)
-    @NotNull
-    @Size(min = 1, max = 45)
+    @Column(name = "Idproveedores")
+    private Integer idproveedores;
+    @Size(max = 255)
+    @Column(name = "cantidad_material")
     private String cantidadMaterial;
-    @Basic(optional = false)
-    @NotNull
-    @Size(min = 1, max = 45)
-    private String preciosMaterial;
+    @Size(max = 255)
+    @Column(name = "codigo_material")
+    private String codigoMaterial;
+    @Size(max = 255)
+    @Column(name = "direccion_proveedor")
+    private String direccionProveedor;
+    @Size(max = 255)
+    @Column(name = "nombre_material")
+    private String nombreMaterial;
+    @Size(max = 255)
+    @Column(name = "nombre_proveedor")
+    private String nombreProveedor;
+    @Size(max = 255)
+    @Column(name = "precio_material")
+    private String precioMaterial;
+    @Size(max = 255)
+    @Column(name = "telefono_proveedor")
+    private String telefonoProveedor;
 
     public Proveedores() {
     }
 
-    public Proveedores(Integer codproveedores) {
-        this.codproveedores = codproveedores;
+    public Proveedores(Integer idproveedores) {
+        this.idproveedores = idproveedores;
     }
 
-    public Proveedores(Integer codproveedores, String nombreProveedor, String direccionProveedor, String telefonoProveedor, String nombreMaterial, String codMaterial, String cantidadMaterial, String preciosMaterial) {
-        this.codproveedores = codproveedores;
-        this.nombreProveedor = nombreProveedor;
-        this.direccionProveedor = direccionProveedor;
-        this.telefonoProveedor = telefonoProveedor;
-        this.nombreMaterial = nombreMaterial;
-        this.codMaterial = codMaterial;
-        this.cantidadMaterial = cantidadMaterial;
-        this.preciosMaterial = preciosMaterial;
+    public Integer getIdproveedores() {
+        return idproveedores;
     }
 
-    public Integer getCodproveedores() {
-        return codproveedores;
-    }
-
-    public void setCodproveedores(Integer codproveedores) {
-        this.codproveedores = codproveedores;
-    }
-
-    public String getNombreProveedor() {
-        return nombreProveedor;
-    }
-
-    public void setNombreProveedor(String nombreProveedor) {
-        this.nombreProveedor = nombreProveedor;
-    }
-
-    public String getDireccionProveedor() {
-        return direccionProveedor;
-    }
-
-    public void setDireccionProveedor(String direccionProveedor) {
-        this.direccionProveedor = direccionProveedor;
-    }
-
-    public String getTelefonoProveedor() {
-        return telefonoProveedor;
-    }
-
-    public void setTelefonoProveedor(String telefonoProveedor) {
-        this.telefonoProveedor = telefonoProveedor;
-    }
-
-    public String getNombreMaterial() {
-        return nombreMaterial;
-    }
-
-    public void setNombreMaterial(String nombreMaterial) {
-        this.nombreMaterial = nombreMaterial;
-    }
-
-    public String getCodMaterial() {
-        return codMaterial;
-    }
-
-    public void setCodMaterial(String codMaterial) {
-        this.codMaterial = codMaterial;
+    public void setIdproveedores(Integer idproveedores) {
+        this.idproveedores = idproveedores;
     }
 
     public String getCantidadMaterial() {
@@ -142,18 +87,58 @@ public class Proveedores implements Serializable {
         this.cantidadMaterial = cantidadMaterial;
     }
 
-    public String getPreciosMaterial() {
-        return preciosMaterial;
+    public String getCodigoMaterial() {
+        return codigoMaterial;
     }
 
-    public void setPreciosMaterial(String preciosMaterial) {
-        this.preciosMaterial = preciosMaterial;
+    public void setCodigoMaterial(String codigoMaterial) {
+        this.codigoMaterial = codigoMaterial;
+    }
+
+    public String getDireccionProveedor() {
+        return direccionProveedor;
+    }
+
+    public void setDireccionProveedor(String direccionProveedor) {
+        this.direccionProveedor = direccionProveedor;
+    }
+
+    public String getNombreMaterial() {
+        return nombreMaterial;
+    }
+
+    public void setNombreMaterial(String nombreMaterial) {
+        this.nombreMaterial = nombreMaterial;
+    }
+
+    public String getNombreProveedor() {
+        return nombreProveedor;
+    }
+
+    public void setNombreProveedor(String nombreProveedor) {
+        this.nombreProveedor = nombreProveedor;
+    }
+
+    public String getPrecioMaterial() {
+        return precioMaterial;
+    }
+
+    public void setPrecioMaterial(String precioMaterial) {
+        this.precioMaterial = precioMaterial;
+    }
+
+    public String getTelefonoProveedor() {
+        return telefonoProveedor;
+    }
+
+    public void setTelefonoProveedor(String telefonoProveedor) {
+        this.telefonoProveedor = telefonoProveedor;
     }
 
     @Override
     public int hashCode() {
         int hash = 0;
-        hash += (codproveedores != null ? codproveedores.hashCode() : 0);
+        hash += (idproveedores != null ? idproveedores.hashCode() : 0);
         return hash;
     }
 
@@ -164,7 +149,7 @@ public class Proveedores implements Serializable {
             return false;
         }
         Proveedores other = (Proveedores) object;
-        if ((this.codproveedores == null && other.codproveedores != null) || (this.codproveedores != null && !this.codproveedores.equals(other.codproveedores))) {
+        if ((this.idproveedores == null && other.idproveedores != null) || (this.idproveedores != null && !this.idproveedores.equals(other.idproveedores))) {
             return false;
         }
         return true;
@@ -172,7 +157,7 @@ public class Proveedores implements Serializable {
 
     @Override
     public String toString() {
-        return "com.mycompany.molding3.model.Proveedores[ codproveedores=" + codproveedores + " ]";
+        return "com.mycompany.molding3.model.Proveedores[ idproveedores=" + idproveedores + " ]";
     }
     
 }
