@@ -48,7 +48,7 @@ public class controllerClientes implements Serializable {
       public void update(int id) {
         clientes.setIdclientes(id);
         clientesfacade.edit(clientes);
-        mensaje = " se acatualizo correctamente";
+        mensaje = " se acatualizo correctamente"; 
     }
 
     /**

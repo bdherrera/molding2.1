@@ -11,7 +11,7 @@ import javax.persistence.PersistenceContext;
 
 /**
  *
- * @author AdminSena
+ * @author kevv_
  */
 @Stateless
 public class ProveedoresFacade extends AbstractFacade<Proveedores> {
