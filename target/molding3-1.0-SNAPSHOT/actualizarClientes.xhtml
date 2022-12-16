@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>clientes</title>
+        <!-- link bootstrap cdn -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"></link>
+        <!-- fin de link bootstrap -->
+
+
+
+
+        <!-- link de cnd de iconos -->
+        <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet"></link>
+        <script src="https://kit.fontawesome.com/fa3d9ebc07.js" crossorigin="anonymous"></script>
+        <!-- fin de link de iconos -->    </h:head>
+    <h:body>
+        <div class="container-fluid" >
+
+            <!-- container de sections -->
+            <div class="container-fluid border-bottom"  style="padding-bottom: 10px">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-9">
+                            <h1 class="font-weight-bold mb-0">Clientes </h1>
+                            <p class="lead text-muted"></p>
+                        </div>
+                        <f:view>
+
+
+                            <h:form>
+                                <h1><h:outputText value="Create/Edit"/></h1>
+                                <h:panelGrid columns="2">
+                                    <h:outputLabel value="Idclientes:" for="idclientes" />
+                                    <h:inputText id="idclientes" value="#{controllerClientes.clientes.idclientes}" title="Idclientes" required="true" requiredMessage="The Idclientes field is required."/>
+                                    <h:outputLabel value="Cedula:" for="cedula" />
+                                    <h:inputText id="cedula" value="#{controllerClientes.clientes.cedula}" title="Cedula" />
+                                    <h:outputLabel value="Nombre:" for="nombre" />
+                                    <h:inputText id="nombre" value="#{controllerClientes.clientes.nombre}" title="Nombre" />
+                                    <h:outputLabel value="Apellido:" for="apellido" />
+                                    <h:inputText id="apellido" value="#{controllerClientes.clientes.apellido}" title="Apellido" />
+                                    <h:outputLabel value="Telefono:" for="telefono" />
+                                    <h:inputText id="telefono" value="#{controllerClientes.clientes.telefono}" title="Telefono" />
+                                    <h:outputLabel value="FechaNacimiento:" for="fechaNacimiento" />
+                                    <h:inputText id="fechaNacimiento" value="#{controllerClientes.clientes.fechaNacimiento}" title="FechaNacimiento" />
+                                    <h:outputLabel value="Correo:" for="correo" />
+                                    <h:inputText id="correo" value="#{controllerClientes.clientes.correo}" title="Correo" />
+                                    <h:outputLabel value="Edad:" for="edad" />
+                                    <h:inputText id="edad" value="#{controllerClientes.clientes.edad}" title="Edad" />
+                                    <h:outputLabel value="Direccion:" for="direccion" />
+                                    <h:inputText id="direccion" value="#{controllerClientes.clientes.direccion}" title="Direccion" />
+                                    <h:outputLabel value="TipoContrato:" for="tipoContrato" />
+                                    <h:inputText id="tipoContrato" value="#{controllerClientes.clientes.tipoContrato}" title="TipoContrato" />
+                                </h:panelGrid>
+                                <h:commandButton value="actualizar" action="#{controllerClientes.update(controllerClientes.clientes.idclientes)}">
+                                    
+                                </h:commandButton>
+                                <h:commandButton  value="regresar" action="cliente.xhtml">
+                                    
+                                </h:commandButton>
+
+                            </h:form>
+                        </f:view>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- finde container de sections -->
+
+
+        
+
+        
+
+        <!-- scripts de bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+        <!-- fin de scripts -->
+        <!-- scrip de chartjs -->
+
+        <!-- fin de script de chartjs -->
+        <!-- scripts de jquery -->
+
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/1.13.1/js/dataTables.bootstrap5.min.js"></script>
+        <script src="https://cdn.datatables.net/buttons/2.2.3/js/dataTables.buttons.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+        <script src="https://cdn.datatables.net/buttons/2.2.3/js/buttons.html5.min.js"></script>
+        <script src="https://cdn.datatables.net/buttons/2.2.3/js/buttons.print.min.js"></script>
+        <script>$(document).ready(function () {
+                $('#tabla').DataTable({
+                    dom: 'Bfrtip',
+                    buttons: [
+                        'copy', 'csv', 'excel', 'pdf', 'print'
+                    ]
+                });
+            });
+        </script>
+
+
+        <!-- fin de scripts jquery -->
+
+    </h:body>
+</html>
+
