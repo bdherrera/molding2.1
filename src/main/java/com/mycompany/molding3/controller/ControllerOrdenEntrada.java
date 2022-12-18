@@ -52,16 +52,9 @@ public class ControllerOrdenEntrada implements Serializable {
     }
 
     public void update(int id) {
-        entrada.setIdOrdenEntrada(id);
-        entradafacade.edit(entrada);
-
-
-        
-      
+        getEntrada().setIdOrdenEntrada(id);
+        getEntradafacade().edit(getEntrada());
         setMessage("Se actualizo orden entrada correctamente");
-
-        
-
     }
 
     /**

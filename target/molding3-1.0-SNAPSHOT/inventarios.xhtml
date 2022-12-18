@@ -166,93 +166,10 @@
 
                         <h:column>
                             <f:facet name="header">OPCIONES</f:facet>
-                            <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                Actualizar
-                            </button>
-                            <!-- Modal -->
-                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h1 class="modal-title fs-5" id="exampleModalLabel" >Actualizar Orden de Salida</h1>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <h:form >
-                                                <div class="row">
-                                                    <div class="col-12">
-                                                        <div class="form-floating">
-                                                            <h:inputText value="#{controllerOrdenSalida.orden.idOrden}" id="id" class="form-control"  />
-                                                            <label for="id">ID</label>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="row">
-                                                        <div class="col-12">
-                                                            <div class="form-floating">
-                                                                <h:inputText value="#{controllerOrdenSalida.orden.nombreMaterial}" id="nombreMaterial" class="form-control"  />
-                                                                <label for="rut">Nombre Material</label>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 mt-3">
-                                                            <div class="form-floating">
-                                                                <h:inputText value="#{controllerOrdenSalida.orden.nombreContratista}" id="nombre" class="form-control" />
-                                                                <label for="nombre">Nombre Contratista</label>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 mt-3">
-
-                                                            <div class="form-floating">
-                                                                <h:inputText value="#{controllerOrdenSalida.orden.cantidad}" id="cantidad" class="form-control" />
-                                                                <label for="cantidad">Cantidad</label>
-                                                            </div>
-                                                        </div>
-                                                        
-                                                        <div class="col-12 mt-3">
-                                                            <div class="form-floating">
-                                                                <h:inputText value="#{controllerOrdenSalida.orden.fechaEntrada}" id="fechaEntrada" class="form-control" />
-                                                                <label for="fecha">Fecha Entrada</label>
-                                                            </div>
-                                                        </div>
-
-
-                                                        <div class="col-12 mt-3">
-                                                            <div class="form-floating">
-                                                                <h:inputText value="#{controllerOrdenSalida.orden.fechaSalida}" id="fecha" class="form-control" />
-                                                                <label for="fecha">Fecha Salida</label>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="col-12 mt-3">
-                                                            <div class="form-floating">
-                                                                <h:inputText value="#{controllerOrdenSalida.orden.direccion}" id="dirección" class="form-control" />
-                                                                <label for="descripcion">Direccion</label>
-                                                            </div>
-                                                        </div>
-
-
-
-
-
-                                                        <div class="d-grid gap-2" style="padding-top: 15px">
-                                                            <h:form>
-                                                                <h:commandButton action="#{controllerOrdenSalida.update(OrdenSalida.idOrden)}" class="btn btn-warning" value="Guardar"></h:commandButton>
-                                                            </h:form>
-
-                                                            <p>#{controllerOrdenSalida.message}</p>
-                                                        </div>
-
-
-                                                    </div>
-
-                                                </div>
-
-                                            </h:form>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
+                             <h:form style="padding-top: 10px">
+                                <h:commandButton action="ActualizarOrdenSalida.xhtml" class="btn btn-warning" value="Actualizar"></h:commandButton>
+                            </h:form>
+                            
                             <h:form style="padding-top: 10px">
                                 <h:commandButton action="#{controllerOrdenSalida.delete(OrdenSalida.idOrden)}" class="btn btn-danger" value="Eliminar"></h:commandButton>
                             </h:form>
