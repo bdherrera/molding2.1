@@ -37,16 +37,17 @@ public class ControllerOrdenEntrada implements Serializable {
         return getEntradafacade().findAll();
     }
 
-    public void delete(int id) {
+    public void eliminar(int id) {
         OrdenEntrada ordenEntrada = new OrdenEntrada();
         ordenEntrada.setIdOrdenEntrada(id);
-        entradafacade.remove(entrada);
+        getEntradafacade().remove(getEntrada());
+        
        
     }
 
     public void create() {
-        entradafacade.create(entrada);
-        message("se creo correctamente");
+        getEntradafacade().create(getEntrada());
+
         
     }
 
@@ -54,9 +55,14 @@ public class ControllerOrdenEntrada implements Serializable {
         entrada.setIdOrdenEntrada(id);
         entradafacade.edit(entrada);
 
+<<<<<<< HEAD
         
       
         setMessage("Se actualizo orden entrada correctamente");
+=======
+        getEntrada().setIdOrdenEntrada(id);
+        getEntradafacade().edit(getEntrada());
+>>>>>>> 0045a638c79650bebefa3efd6dcd00f6c6871b35
 
     }
 
@@ -102,9 +108,6 @@ public class ControllerOrdenEntrada implements Serializable {
         this.entradafacade = entradafacade;
     }
 
-    private void message(String se_creo_correctamente) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
 
   
 

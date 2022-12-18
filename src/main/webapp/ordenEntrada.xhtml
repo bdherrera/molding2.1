@@ -30,7 +30,11 @@
                                 <button type="button" class="btn btn-success"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                     Crear Orden Entrada Materiales
                                 </button>
+<<<<<<< HEAD
                                   <h:form>
+=======
+                                <h:form>
+>>>>>>> 0045a638c79650bebefa3efd6dcd00f6c6871b35
                                     <h:commandButton action="inventarios.xhtml" class="btn btn-success" value="Orden de Salida"></h:commandButton>
                                 </h:form>
                                 <h:form>
@@ -42,12 +46,18 @@
                                     <div class="modal-dialog">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Registrar Materiales</h1>
+                                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Registrar Orden De Entrada</h1>
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                             </div>
                                             <div class="modal-body">
                                                 <h:form>
                                                     <div class="row">
+                                                        <div class="col-12 mt-3">
+                                                            <div class="form-floating">
+                                                                <h:inputText value="#{controllerOrdenEntrada.entrada.idOrdenEntrada}" id="id" class="form-control" />
+                                                                <label for="id">ID</label>
+                                                            </div>
+                                                        </div>
 
                                                         <div class="col-12 mt-3">
                                                             <div class="form-floating">
@@ -156,22 +166,29 @@
                         <h:column>
                             <f:facet name="header">Opciones</f:facet>
                             <h:form>
-                                <h:commandButton action="ActualizarOrdenEntrada.xhtml" class="btn btn-warning"></h:commandButton>
+                                <h:commandButton value="Actualizar" action="ActualizarOrdenEntrada.xhtml" class="btn btn-warning"></h:commandButton>
                             </h:form>
-
                             <h:form style="padding-top: 10px">
-                                <h:commandButton action="#{controllerOrdenEntrada.delete(Entrada.idOrdenEntrada)}" class="btn btn-danger" value="Eliminar"></h:commandButton>
+                                <h:commandButton action="#{controllerOrdenEntrada.eliminar(Entrada.idOrdenEntrada)}" class="btn btn-danger" value="Eliminar"></h:commandButton>
                             </h:form>
 
                         </h:column>
 
                     </tbody>
                 </h:dataTable>
-
             </div>
-            <!-- find container  -->
+        </div>
 
-        </div> 
+
+
+
+
+
+
+
+        <!-- find container  -->
+
+
 
 
 
