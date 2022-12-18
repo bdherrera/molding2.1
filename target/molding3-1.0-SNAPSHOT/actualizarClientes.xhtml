@@ -9,76 +9,68 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"></link>
         <!-- fin de link bootstrap -->
 
-
+        <link href="Modulos/CSS/styles.css" rel="stylesheet" type="text/css"></link>
 
 
         <!-- link de cnd de iconos -->
         <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet"></link>
         <script src="https://kit.fontawesome.com/fa3d9ebc07.js" crossorigin="anonymous"></script>
-        <!-- fin de link de iconos -->    </h:head>
+        <!-- fin de link de iconos -->    
+    </h:head>
     <h:body>
-        <div class="container-fluid" >
-
-            <!-- container de sections -->
-            <div class="container-fluid border-bottom"  style="padding-bottom: 10px">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-lg-9">
-                            <h1 class="font-weight-bold mb-0">Clientes </h1>
-                            <p class="lead text-muted"></p>
-                        </div>
-                        <f:view>
+        <div class="login-page" >
 
 
-                            <h:form>
-                                <h1><h:outputText value="Create/Edit"/></h1>
-                                <h:panelGrid columns="2">
-                                    <h:outputLabel value="Idclientes:" for="idclientes" />
-                                    <h:inputText id="idclientes" value="#{controllerClientes.clientes.idclientes}" title="Idclientes" required="true" requiredMessage="The Idclientes field is required."/>
-                                    <h:outputLabel value="Cedula:" for="cedula" />
-                                    <h:inputText id="cedula" value="#{controllerClientes.clientes.cedula}" title="Cedula" />
-                                    <h:outputLabel value="Nombre:" for="nombre" />
-                                    <h:inputText id="nombre" value="#{controllerClientes.clientes.nombre}" title="Nombre" />
-                                    <h:outputLabel value="Apellido:" for="apellido" />
-                                    <h:inputText id="apellido" value="#{controllerClientes.clientes.apellido}" title="Apellido" />
-                                    <h:outputLabel value="Telefono:" for="telefono" />
-                                    <h:inputText id="telefono" value="#{controllerClientes.clientes.telefono}" title="Telefono" />
-                                    <h:outputLabel value="FechaNacimiento:" for="fechaNacimiento" />
-                                    <h:inputText id="fechaNacimiento" value="#{controllerClientes.clientes.fechaNacimiento}" title="FechaNacimiento" />
-                                    <h:outputLabel value="Correo:" for="correo" />
-                                    <h:inputText id="correo" value="#{controllerClientes.clientes.correo}" title="Correo" />
-                                    <h:outputLabel value="Edad:" for="edad" />
-                                    <h:inputText id="edad" value="#{controllerClientes.clientes.edad}" title="Edad" />
-                                    <h:outputLabel value="Direccion:" for="direccion" />
-                                    <h:inputText id="direccion" value="#{controllerClientes.clientes.direccion}" title="Direccion" />
-                                    <h:outputLabel value="TipoContrato:" for="tipoContrato" />
-                                    <h:inputText id="tipoContrato" value="#{controllerClientes.clientes.tipoContrato}" title="TipoContrato" />
-                                </h:panelGrid>
-                                <h:commandButton value="actualizar" action="#{controllerClientes.update(controllerClientes.clientes.idclientes)}">
-                                    
-                                </h:commandButton>
-                                <h:commandButton  value="regresar" action="cliente.xhtml">
-                                    
-                                </h:commandButton>
-
-                            </h:form>
-                        </f:view>
 
 
-                    </div>
 
-                </div>
-            </div>
+            <h:form class="form">
+                <h1><h:outputText value="Actualizar"/></h1>
+                <h:panelGrid columns="2">
+                    <h:outputLabel value="Idclientes:" for="idclientes" />
+                    <h:inputText id="idclientes" value="#{controllerClientes.clientes.idclientes}" title="Idclientes" required="true" requiredMessage="The Idclientes field is required."/>
+                    <h:outputLabel value="Cedula:" for="cedula" />
+                    <h:inputText id="cedula" value="#{controllerClientes.clientes.cedula}" title="Cedula" />
+                    <h:outputLabel value="Nombre:" for="nombre" />
+                    <h:inputText id="nombre" value="#{controllerClientes.clientes.nombre}" title="Nombre" />
+                    <h:outputLabel value="Apellido:" for="apellido" />
+                    <h:inputText id="apellido" value="#{controllerClientes.clientes.apellido}" title="Apellido" />
+                    <h:outputLabel value="Telefono:" for="telefono" />
+                    <h:inputText id="telefono" value="#{controllerClientes.clientes.telefono}" title="Telefono" />
+                    <h:outputLabel value="FechaNacimiento:" for="fechaNacimiento" />
+                    <h:inputText id="fechaNacimiento" value="#{controllerClientes.clientes.fechaNacimiento}" title="FechaNacimiento" />
+                    <h:outputLabel value="Correo:" for="correo" />
+                    <h:inputText id="correo" value="#{controllerClientes.clientes.correo}" title="Correo" />
+                    <h:outputLabel value="Edad:" for="edad" />
+                    <h:inputText id="edad" value="#{controllerClientes.clientes.edad}" title="Edad" />
+                    <h:outputLabel value="Direccion:" for="direccion" />
+                    <h:inputText id="direccion" value="#{controllerClientes.clientes.direccion}" title="Direccion" />
+                    <h:outputLabel value="TipoContrato:" for="tipoContrato" />
+                    <h:inputText id="tipoContrato" value="#{controllerClientes.clientes.tipoContrato}" title="TipoContrato" />
+                </h:panelGrid>
+                <h:commandButton value="actualizar" action="#{controllerClientes.update(controllerClientes.clientes.idclientes)}">
+
+                </h:commandButton>
+                <h:commandButton  value="regresar" action="cliente.xhtml">
+
+                </h:commandButton>
+
+            </h:form>
+
+
+
         </div>
+
+       
 
 
 
         <!-- finde container de sections -->
 
 
-        
 
-        
+
+
 
         <!-- scripts de bootstrap -->
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>

@@ -39,7 +39,7 @@ public class controllerMateriales implements Serializable {
 
     //crud materiales
     public List<Materiales> getALLMateriales() {
-        return materialfacade.findAll();
+        return getMaterialfacade().findAll();
     }
 
     public void delete(int id) {
@@ -56,7 +56,8 @@ public class controllerMateriales implements Serializable {
 
     public void update(int id) {
 
-        getMaterialfacade().create(getMaterial());
+        getMaterial().setIdMateriales(id);
+        getMaterialfacade().edit(getMaterial());
       
         setMessage("Se actualizo material correctamente");
 

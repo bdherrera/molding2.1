@@ -1,4 +1,5 @@
 com\mycompany\molding3\controller\controllerUsuarios.class
+com\mycompany\molding3\model\Registrar.class
 com\mycompany\molding3\service\ContratistasFacade.class
 com\mycompany\molding3\model\OrdenEntrada.class
 com\mycompany\molding3\service\OrdenSalidaFacade.class
@@ -7,6 +8,7 @@ com\mycompany\molding3\model\Contratistas_.class
 com\mycompany\molding3\service\ClientesFacade.class
 com\mycompany\molding3\model\OrdenSalida_.class
 com\mycompany\molding3\model\Materiales.class
+com\mycompany\molding3\model\Registrar_.class
 com\mycompany\molding3\controller\controllerProveedores.class
 com\mycompany\molding3\service\ProveedoresFacade.class
 com\mycompany\molding3\controller\controllerMateriales.class
@@ -22,8 +24,10 @@ com\mycompany\molding3\model\OrdenEntrada_.class
 com\mycompany\molding3\service\OrdenEntradaFacade.class
 com\mycompany\molding3\controller\controllerOrdenSalida.class
 com\mycompany\molding3\model\Usuarios_.class
+com\mycompany\molding3\service\RegistrarFacade.class
 com\mycompany\molding3\controller\controllerContratistas.class
 com\mycompany\molding3\model\OrdenSalida.class
+com\mycompany\molding3\controller\controllerRegistrar.class
 com\mycompany\molding3\controller\ControllerOrdenEntrada.class
 com\mycompany\molding3\service\AbstractFacade.class
 com\mycompany\molding3\service\MaterialesFacade.class

@@ -25,21 +25,21 @@
                                 <h1 class="font-weight-bold mb-0">Materiales</h1>
                                 <p class="lead text-muted"></p>
                             </div>
-                            
-                             
+
+
                             <div class="col-lg-3 container-fluid d-flex" >
                                 <!-- Button trigger modal -->
                                 <button type="button" class="btn btn-success"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                     Crear Matrial
                                 </button>
-                                
+
                                 <h:form>
                                     <h:commandButton action="ordenEntrada.xhtml" class="btn btn-success" value="Orden de Entrada"></h:commandButton>
                                 </h:form>
                                 <h:form>
                                     <h:commandButton action="inventarios.xhtml" class="btn btn-success" value="Orden de salida"></h:commandButton>
                                 </h:form>
-                                
+
 
                                 <!-- Modal -->
                                 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -136,72 +136,16 @@
                             <f:facet name="header">Cantidad</f:facet>
                             <h:outputText value="#{Materiales.estado}"></h:outputText>
                         </h:column>
-                       
-                   
+
+
                         <h:column>
                             <f:facet name="header">OPCIONES</f:facet>
-                            <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                Actualizar
-                            </button>
-                            <!-- Modal -->
-                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h1 class="modal-title fs-5" id="exampleModalLabel" >Actualizar Materiales</h1>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <h:form >
-                                                <div class="row">
-                                                    <div class="col-12">
-                                                        <div class="form-floating">
-                                                            <h:inputText value="#{controllerMateriales.material.idMateriales}" id="id" class="form-control"  />
-                                                            <label for="id">ID</label>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="row">
-                                                        <div class="col-12">
-                                                            <div class="form-floating">
-                                                                <h:inputText value="#{controllerMateriales.material.nombre}" id="nombreMaterial" class="form-control"  />
-                                                                <label for="nombre">Nombre Material</label>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 mt-3">
-                                                            <div class="form-floating">
-                                                                <h:inputText value="#{controllerMateriales.material.cantidad}" id="cantidad" class="form-control" />
-                                                                <label for="cantidad">Cantidad</label>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 mt-3">
-
-                                                            <div class="form-floating">
-                                                                <h:inputText value="#{controllerMateriales.material.estado}" id="estado" class="form-control" />
-                                                                <label for="estado">Estado</label>
-                                                            </div>
-                                                        </div>
+                             <h:form style="padding-top: 10px">
+                                <h:commandButton action="ActualizarMateriales.xhtml" class="btn btn-warnig" value="Actualizar"></h:commandButton>
+                            </h:form>
 
 
-                                                        <div class="d-grid gap-2" style="padding-top: 15px">
-                                                            <h:form>
-                                                                <h:commandButton action="#{controllerMateriales.update(Materiales.idMateriales)}" class="btn btn-warning" value="Guardar"></h:commandButton>
-                                                            </h:form>
-
-                                                            <p>#{controllerMateriales.message}</p>
-                                                        </div>
-
-
-                                                    </div>
-
-                                                </div>
-
-                                            </h:form>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
+                           
                             <h:form style="padding-top: 10px">
                                 <h:commandButton action="#{controllerMateriales.delete(Materiales.idMateriales)}" class="btn btn-danger" value="Eliminar"></h:commandButton>
                             </h:form>
